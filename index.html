@@ -12,9 +12,21 @@
     body, html {
       height: 100%;
       font-family: 'Times New Roman', Times, serif;
-      color: black;
+      color: white;
       background: url('https://i.imgur.com/BDDn2AE.jpeg') no-repeat center center fixed;
       background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* darker overlay */
+      z-index: -1;
     }
 
     header {
@@ -32,24 +44,24 @@
       display: flex;
       flex-direction: column;
       font-weight: 400;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
     .branding .name {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: 700;
     }
 
     .branding .subtitle {
       font-style: italic;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
     nav {
       display: flex;
       gap: 2rem;
       font-weight: 700;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
 
     nav a {
@@ -68,25 +80,21 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      padding-top: 150px;
+      padding-top: 160px;
       padding-left: 2rem;
       padding-right: 2rem;
       text-align: center;
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 3.4rem;
       margin-bottom: 2rem;
-      color: white;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
     }
 
     .about {
       max-width: 800px;
-      font-size: 1.2rem;
-      line-height: 1.6;
-      color: white;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+      font-size: 1.4rem;
+      line-height: 1.8;
     }
 
     .socials {
@@ -96,6 +104,8 @@
       gap: 1.5rem;
       left: 50%;
       transform: translateX(-50%);
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .socials a {
@@ -140,8 +150,8 @@
     <a href="mailto:joanrenemerou@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
     <a href="https://orcid.org/0000-0002-5776-6643" title="ORCID"><i class="fab fa-orcid"></i></a>
     <a href="https://www.instagram.com/joanrenemerou/" title="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://github.com/joanrenemerou"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/joan-ren%C3%A9-m%C3%A9rou-217578298/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/joanrenemerou" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/joan-ren%C3%A9-m%C3%A9rou-217578298/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
   </div>
 
 </body>
