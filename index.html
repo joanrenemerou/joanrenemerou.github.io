@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joan-René Mérou</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome CDN -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
   <style>
@@ -14,10 +13,12 @@
     body, html {
       height: 100%;
       font-family: 'Inter', sans-serif;
-      color: white;
+      color: black;
+      background: url('https://i.imgur.com/BDDn2AE.jpeg') no-repeat center center fixed;
+      background-size: cover;
     }
 
-    header {
+  header {
       width: 100%;
       padding: 30px;
       display: flex;
@@ -47,26 +48,45 @@
 
     nav {
       display: flex;
-      justify-content: flex-start;
       gap: 2rem;
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 1.2rem;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      font-size: inherit;
-      font-weight: inherit;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f39c12;
     }
 
     .center {
-      height: 100%;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 2rem;
       text-align: center;
+      background: rgba(0, 0, 0, 0.5); /* subtle dark overlay for readability */
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .about {
+      max-width: 800px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
     }
 
     .socials {
@@ -89,9 +109,34 @@
     }
   </style>
 </head>
+<body>
 
-    <h3 class="c1">
-      Joan-René Mérou's Personal Site
-    </h3>
+  <header>
+    <div class="branding">
+      <div class="name">Joan-René Mérou</div>
+      <div class="subtitle">Personal Website</div>
+    </div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Photography</a>
+      <a href="#">Physics</a>
+      <a href="#">Curriculum</a>
+    </nav>
+  </header>
 
+  <div class="center">
+    <h1>Welcome to Joan-René Mérou's Personal Website</h1>
+    <div class="about">
+      <p>
+        This is my website
+      </p>
+    </div>
+  </div>
+
+  <div class="socials">
+    <a href="https://github.com/joanrenemerou"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/joan-ren%C3%A9-m%C3%A9rou-217578298/"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+</body>
 </html>
