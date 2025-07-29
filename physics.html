@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Physics – Joan-René Mérou</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body, html {
+      height: 100%;
+      font-family: 'Times New Roman', Times, serif;
+      color: #f5f5f5;
+      background: url('https://i.imgur.com/SAjFPK1.jpeg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    header {
+      width: 100%;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .branding {
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+      font-size: 1.3rem;
+    }
+
+    .branding .name {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .branding .subtitle {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a.active {
+      color: #f39c12;
+      border-bottom: 2px solid #f39c12;
+      padding-bottom: 2px;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 160px auto 80px;
+      padding: 2rem;
+      font-size: 1.3rem;
+      line-height: 1.8;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    a.pub-link {
+      color: #f5f5f5;
+      text-decoration: underline;
+    }
+
+    a.pub-link:hover {
+      color: #f39c12;
+    }
+
+    .socials {
+      position: absolute;
+      bottom: 30px;
+      display: flex;
+      gap: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .socials a {
+      color: white;
+      font-size: 1.9rem;
+      text-decoration: none;
+    }
+
+    .socials a:hover {
+      color: #f39c12;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="branding">
+      <div class="name">Joan-René Mérou</div>
+      <div class="subtitle">Personal Website</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="physics.html" class="active">Physics</a>
+      <a href="#">Photography</a>
+      <a href="#">Curriculum</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>Physics Work</h1>
+
+    <ul>
+      <li><a class="pub-link" href="https://arxiv.org/abs/2209.05087" target="_blank">📄 arXiv:2209.05087</a></li>
+      <li><a class="pub-link" href="https://arxiv.org/abs/2411.18370" target="_blank">📄 arXiv:2411.18370</a></li>
+      <li><a class="pub-link" href="https://arxiv.org/abs/2507.07816" target="_blank">📄 arXiv:2507.07816</a></li>
+      <li><a class="pub-link" href="https://dspace.uib.es/xmlui/handle/11201/159953" target="_blank">🎓 Undergraduate Thesis</a></li>
+      <li><a class="pub-link" href="https://dspace.uib.es/xmlui/handle/11201/166272" target="_blank">🎓 Master's Thesis</a></li>
+    </ul>
+  </div>
+
+  <div class="socials">
+    <a href="mailto:joanrenemerou@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://orcid.org/0000-0002-5776-6643" title="ORCID"><i class="fab fa-orcid"></i></a>
+    <a href="https://www.instagram.com/joanrenemerou/" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/joanrenemerou"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/joan-ren%C3%A9-m%C3%A9rou-217578298/"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+</body>
+</html>
