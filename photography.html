@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photography – Joan-René Mérou</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      color: white;
+      background: url('https://i.imgur.com/ZydyS5g.jpeg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    header {
+      width: 100%;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .branding .name {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 60px auto 30px;
+      padding: 0 20px;
+      font-size: 1.4rem;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .gallery-grid a {
+      display: block;
+      overflow: hidden;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .gallery-grid a:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 600px) {
+      .intro {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="branding">
+      <div class="name">Joan-René Mérou</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="curriculum.html">Curriculum</a>
+      <a href="photography.html" class="active">Photography</a>
+    </nav>
+  </header>
+
+  <div class="intro">
+    <p>
+      Below you'll find curated galleries, each focused on a different theme or trip.
+      Click any image to explore that gallery.
+    </p>
+  </div>
+
+  <div class="gallery-grid">
+    <a href="gallery_scotland.html">
+      <img src="https://via.placeholder.com/400x300?text=Scotland" alt="Trip to Scotland">
+    </a>
+    <a href="gallery_correfocs.html">
+      <img src="https://via.placeholder.com/400x300?text=Correfocs" alt="Correfocs">
+    </a>
+    <a href="gallery_louisiana.html">
+      <img src="https://via.placeholder.com/400x300?text=Louisiana" alt="Louisiana">
+    </a>
+    <a href="gallery_paris.html">
+      <img src="https://via.placeholder.com/400x300?text=Paris" alt="Paris">
+    </a>
+  </div>
+
+</body>
+</html>
