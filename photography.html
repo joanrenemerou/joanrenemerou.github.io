@@ -7,12 +7,15 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
       color: white;
       background: url('https://i.imgur.com/ZydyS5g.jpeg') no-repeat center center fixed;
       background-size: cover;
+      position: relative;
     }
 
     body::before {
@@ -89,6 +92,27 @@
       transform: scale(1.03);
     }
 
+    .socials {
+      position: relative;
+      bottom: 0;
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: center;
+      margin: 60px 0 40px;
+      flex-wrap: wrap;
+    }
+
+    .socials a {
+      color: white;
+      font-size: 1.8rem;
+      text-decoration: none;
+    }
+
+    .socials a:hover {
+      color: #f39c12;
+    }
+
     @media (max-width: 600px) {
       .intro {
         font-size: 1.1rem;
@@ -129,6 +153,14 @@
     <a href="gallery_paris.html">
       <img src="https://via.placeholder.com/400x300?text=Paris" alt="Paris">
     </a>
+  </div>
+
+  <div class="socials">
+    <a href="mailto:joanrenemerou@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://orcid.org/0000-0002-5776-6643" title="ORCID"><i class="fab fa-orcid"></i></a>
+    <a href="https://www.instagram.com/joanrenemerou/" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/joanrenemerou" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/joan-ren%C3%A9-m%C3%A9rou-217578298/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
   </div>
 
 </body>
