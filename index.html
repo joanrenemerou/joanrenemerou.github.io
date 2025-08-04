@@ -52,9 +52,11 @@
       font-weight: 700;
     }
 
-    .branding .subtitle {
-      font-style: italic;
-      font-size: 1.2rem;
+    .branding .socials {
+      margin-top: 0.3rem;
+      display: flex;
+      gap: 1rem;
+      font-size: 1.3rem;
     }
 
     nav {
@@ -98,14 +100,12 @@
     }
 
     .socials {
-      position: absolute;
-      bottom: 30px;
-      display: flex;
-      gap: 1.5rem;
-      left: 50%;
-      transform: translateX(-50%);
+      position: static;
+      left: auto;
+      bottom: auto;
+      transform: none;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
     }
 
     .socials a {
@@ -151,12 +151,10 @@
         font-size: 1rem;
       }
 
-      .socials {
-        position: static;
-        margin-top: 2rem;
-        justify-content: center;
-        transform: none;
-      }
+      .branding .socials {
+          flex-wrap: wrap;
+          font-size: 1.2rem;
+        }
     }
   </style>
 </head>
@@ -165,7 +163,13 @@
   <header>
     <div class="branding">
       <div class="name">Joan-René Mérou</div>
-      <div class="subtitle">Personal Website</div>
+      <div class="socials">
+        <a href="mailto:joanrenemerou@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://orcid.org/0000-0002-5776-6643" title="ORCID"><i class="fab fa-orcid"></i></a>
+        <a href="https://www.instagram.com/joanrenemerou/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/joanrenemerou" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/joan-ren%C3%A9-m%C3%A9rou-217578298/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
     <nav>
       <a href="index.html" class="active">Home</a>
@@ -183,14 +187,6 @@
         Thanks for visiting my website! Feel free to send an email to joanrenemerou@gmail.com for anything you are interested in.
       </p>
     </div>
-  </div>
-
-  <div class="socials">
-    <a href="mailto:joanrenemerou@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-    <a href="https://orcid.org/0000-0002-5776-6643" title="ORCID"><i class="fab fa-orcid"></i></a>
-    <a href="https://www.instagram.com/joanrenemerou/" title="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://github.com/joanrenemerou" title="GitHub"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/joan-ren%C3%A9-m%C3%A9rou-217578298/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
   </div>
 
 </body>
