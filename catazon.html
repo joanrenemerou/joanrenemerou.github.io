@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cat in a Box – Catmazon</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaeaea;
+      color: #111;
+    }
+
+    header {
+      background-color: #232f3e;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      display: flex;
+      gap: 40px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .product-image img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-details {
+      flex: 1;
+    }
+
+    .product-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .rating {
+      color: #ffa41c;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      color: #B12704;
+      margin: 15px 0;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .buy-box {
+      background-color: #f7f7f7;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 300px;
+    }
+
+    .buy-box .price {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .buy-button {
+      background-color: #ffd814;
+      border: 1px solid #fcd200;
+      padding: 10px;
+      width: 100%;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .buy-button:hover {
+      background-color: #f7ca00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Catmazon</h1>
+    <div><i class="fas fa-cat"></i> Free shipping with Prime Pets</div>
+  </header>
+
+  <div class="container">
+    <div class="product-image">
+      <img src="https://i.imgur.com/Shce5UB.jpeg" alt="Cat in a Box">
+    </div>
+
+    <div class="product-details">
+      <h2 class="product-title">Premium Cat in a Box</h2>
+      <div class="rating">
+        ★★★★★ 4.9/5 (27,324 reviews)
+      </div>
+      <div class="price">Price: A hug</div>
+      <div class="description">
+        Meet the revolutionary feline storage solution: the Cat in a Box™. This purring unit comes fully assembled, self-heated, and intermittently responsive.
+        <ul>
+          <li>Automatic purring feature</li>
+          <li>Eco-friendly cardboard packaging</li>
+          <li>Requires zero maintenance (unless hungry)</li>
+          <li>Compatible with laps, cushions, and sunbeams</li>
+        </ul>
+        Warning: will follow you to the bathroom.
+      </div>
+    </div>
+
+    <div class="buy-box">
+      <div class="price">Only: One hug 🤗</div>
+      <button class="buy-button">Give Hug & Adopt Now</button>
+    </
